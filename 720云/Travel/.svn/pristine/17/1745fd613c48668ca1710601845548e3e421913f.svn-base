@@ -1,0 +1,21 @@
+package com.travel.c;
+
+
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.servlet.ModelAndView;
+
+
+//@Controller
+public class ProductC {
+	
+	@RequestMapping("/hhs.do")
+	public ModelAndView queryCategorys(){
+		System.out.println("");
+		ModelAndView mv = new ModelAndView();
+		mv.setViewName("result");
+		return mv;
+	}
+
+}
